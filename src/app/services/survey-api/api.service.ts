@@ -4,10 +4,9 @@ import { HttpClient, HttpParams } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ApiService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
-
-  getSurveyData(){
+  getSurveyData() {
     return this.http.get<any>('http://localhost:3000/surveyData');
   }
 }

@@ -7,11 +7,7 @@ import { Router } from '@angular/router';
   templateUrl: './surveyform.component.html',
   styleUrls: ['./surveyform.component.scss']
 })
-
-
-
 export class SurveyformComponent implements OnInit {
-
   surveyForm = this.formBuilder.group({
     userName: '',
     address: '',
@@ -26,24 +22,18 @@ export class SurveyformComponent implements OnInit {
     rating: '',
     values: '',
     comments: ''
-
   });
   checkArray: FormArray = this.surveyForm.get('likes') as FormArray;
-  constructor(
-    private formBuilder: FormBuilder,
-    public router: Router
-  ) { }
+  constructor(private formBuilder: FormBuilder, public router: Router) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
-  onCheckboxChange(event:any) {
-    
+  onCheckboxChange(event: any) {
     if (event.target.checked) {
       this.checkArray.push(new FormControl(event.target.value));
     } else {
       let i: number = 0;
-      this.checkArray.controls.forEach((item) => {
+      this.checkArray.controls.forEach(item => {
         if (item.value == event.target.value) {
           this.checkArray.removeAt(i);
           return;
@@ -53,11 +43,7 @@ export class SurveyformComponent implements OnInit {
     }
   }
 
-  onSubmit(){
-    console.log(this.surveyForm.value)
+  onSubmit() {
+    console.log(this.surveyForm.value);
   }
-  
-  
-  
-  
 }

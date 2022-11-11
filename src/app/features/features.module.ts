@@ -7,16 +7,12 @@ import { SurveyformComponent } from './survey/surveyform/surveyform.component';
 import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatTableModule} from '@angular/material/table';
-import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { HttpClientModule } from '@angular/common/http';
 
-
 @NgModule({
-  declarations: [
-    SurveyComponent,
-    SurveyformComponent
-  ],
+  declarations: [SurveyComponent, SurveyformComponent],
   imports: [
     CommonModule,
     FeaturesRoutingModule,
@@ -29,4 +25,4 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule
   ]
 })
-export class FeaturesModule { }
+export class FeaturesModule {}

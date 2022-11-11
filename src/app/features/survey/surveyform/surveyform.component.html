@@ -1,144 +1,112 @@
 <div class="page-wrapper">
-    <div class="page-heading-wrapper">
-        <h1 class="fx-row-center gmu-green ss-font-heading">Student Survey</h1>
-    </div>
-    <div class="fx-row-center margin-lr-auto body-color form-wrapper" >
-        <form [formGroup]="surveyForm" (ngSubmit)="onSubmit()" class="width-100 fx-col-center">
-            <div class="form-control ss-mr-btm-1" >
-                <p>User Name <span class="color-red">*</span></p>
-                <input class="txt-input" type="text"
-                       id="name" 
-                       name="userName" 
-                       autocomplete="on" 
-                       autofocus 
-                       required
-                       formControlName="userName"
-                       placeholder="Enter your name"/>
-            </div>
-            <div class="form-control ss-mr-btm-1">
-                <p>  Street Address <span class="color-red">*</span></p>
-                <input class="txt-input" type="text"
-                       id="streetAddress" 
-                       autocomplete="on" 
-                       required
-                       formControlName="address"
-                       placeholder="Enter address" />
-            </div>
-            <div class="form-control ss-mr-btm-1">
-                <p>City<span sclass="color-red">*</span></p>
-                <input class="txt-input" formControlName="city" type="text" name="city" placeholder="City">
-            </div>
-            <div class="form-control ss-mr-btm-1">
-                <p>State<span class="color-red">*</span></p>
-                <input class="txt-input" formControlName="state" type="text" name="state" placeholder="State">
-            </div>
-            <div class="form-control ss-mr-btm-1">
-                <p>Zip<span class="color-red">*</span></p>
-                <input class="txt-input"
-                   type="text" 
-                   id="zip" 
-                   name="zip" 
-                   autocomplete="on" 
-                   required
-                   placeholder="12345" 
-                   formControlName="zip"
-                   maxlength="5" />
-           </div>
-           <div class="form-control ss-mr-btm-1">
-                <p>Contact Number<span class="color-red">*</span></p>
-                <input class="txt-input" type="tel"
-                       id="number" autocomplete="on"
-                       placeholder="Enter your contact number"
-                       formControlName="phone" />
-            </div>
-           <div class="form-control ss-mr-btm-1">
-                  <p>Email<span class="color-red">*</span></p>
-                <input class="txt-input" type="email"
-                       id="email" name="email" autocomplete="on" required
-                       placeholder="name@domain.com"
-                       formControlName="email" />
-            </div>
-        <br> 
-           <div class="form-control ss-mr-btm-1">
-            <p> Date of Survey<span class="color-red">*</span></p>
-    
-                <input class="txt-input" type="date"
-                       id="date"
-                       placeholder="Enter today's date"
-                       formControlName="dateOfSurvey" />
-            </div>
-    
-    <br>
-            <div class="form-control fx-col-center">
-                <label>What do you like the most about the campus
-                    <small>(Check all that apply)</small>
-                </label>
-                <br>
-                <div class="margin-lr-auto display-flex-col">
-                    <label><input type="checkbox" (change)="onCheckboxChange($event)"  name="likeuni" value="students" />students<br/></label>
-                    <label><input type="checkbox" (change)="onCheckboxChange($event)"  name="likeuni" value="location" />location<br/></label>
-                    <label><input type="checkbox" (change)="onCheckboxChange($event)"  name="likeuni" value="campus" />campus<br/></label>
-                    <label><input type="checkbox" (change)="onCheckboxChange($event)"  name="likeuni" value="atmosphere" />atmosphere<br/></label>
-                    <label><input type="checkbox" (change)="onCheckboxChange($event)"  name="likeuni" value="dormrooms" />dorm rooms<br/></label>
-                    <label><input type="checkbox" (change)="onCheckboxChange($event)"  name="likeuni" value="sports" />sports<br/></label>
-                </div>
-    </div>
-    <br>
-           <div class="form-control fx-col-center" >
-                <label>
-                    What made you interested in this university?
-                </label>
-    
-                <br>
-                <div class="margin-lr-auto display-flex-col">
-                    <label><input type="radio" formControlName="interests" name="interests" value="friends" > friends<br></label>
-                    <label><input type="radio" formControlName="interests" name="interests" value="television"> television<br></label>
-                    <label><input type="radio" formControlName="interests" name="interests" value="internet"> internet<br></label>
-                    <label><input type="radio" formControlName="interests" name="interests" value="other"> other<br></label>
-                </div>
-                
-    </div>
-    <br>
-    <div class="form-control fx-col-center">
-    <p>
-                    How likely would you recommend GMU to your friend? <span class="color-red">*</span>
-    </p>
-    <div class="margin-lr-auto width-100 display-flex-col" >
-    <select class="txt-input rec-options" formControlName="rating" name="recommend" id="recommend">
-        <option value="very likely">Very Likely</option>
-        <option value="likely">Likely</option>
-        <option value="unlikely">Unlikely</option>
-    </select>
-</div>
-    </div>
-    <br>
-            
-    
-            <div class="form-control">
-                <p>
-                    Rafel(Enter comma separated values)
-                </p>
-                <input type="text" formControlName="values" class="txt-input"
-                       id="userinput" placeholder="Enter 10 values"/>
-          </div>
-    <br>
-    <div class="form-control fx-col-center">
-        <label for="comment">
-            Additional Comments
-        </label>
-<br>
-        <textarea name="comment" formControlName="comments" id="comment" rows="6" cols="50"
-            placeholder="Enter your comment here">
-        </textarea>
-    </div>
-    <br>
-    <div class="width-100 btn-wrapper" >
-            <button type="submit" value="submit" class="btn-submit">
-                SUBMIT</button>
-            <button type = "reset" class="btn-cancel" (click)="router.navigate(['/']);"  >CANCEL</button>
-    </div>        
-        </form>
-    
-    </div>
+  <div class="page-heading-wrapper">
+    <h1 class="fx-row-center gmu-green ss-font-heading">Student Survey</h1>
+  </div>
+  <div class="fx-row-center margin-lr-auto body-color form-wrapper">
+    <form [formGroup]="surveyForm" (ngSubmit)="onSubmit()" class="width-100 fx-col-center">
+      <div class="form-control ss-mr-btm-1">
+        <p>User Name <span class="color-red">*</span></p>
+        <input
+          class="txt-input"
+          type="text"
+          id="name"
+          name="userName"
+          autocomplete="on"
+          autofocus
+          required
+          formControlName="userName"
+          placeholder="Enter your name" />
+      </div>
+      <div class="form-control ss-mr-btm-1">
+        <p>Street Address <span class="color-red">*</span></p>
+        <input class="txt-input" type="text" id="streetAddress" autocomplete="on" required formControlName="address" placeholder="Enter address" />
+      </div>
+      <div class="form-control ss-mr-btm-1">
+        <p>City<span sclass="color-red">*</span></p>
+        <input class="txt-input" formControlName="city" type="text" name="city" placeholder="City" />
+      </div>
+      <div class="form-control ss-mr-btm-1">
+        <p>State<span class="color-red">*</span></p>
+        <input class="txt-input" formControlName="state" type="text" name="state" placeholder="State" />
+      </div>
+      <div class="form-control ss-mr-btm-1">
+        <p>Zip<span class="color-red">*</span></p>
+        <input class="txt-input" type="text" id="zip" name="zip" autocomplete="on" required placeholder="12345" formControlName="zip" maxlength="5" />
+      </div>
+      <div class="form-control ss-mr-btm-1">
+        <p>Contact Number<span class="color-red">*</span></p>
+        <input class="txt-input" type="tel" id="number" autocomplete="on" placeholder="Enter your contact number" formControlName="phone" />
+      </div>
+      <div class="form-control ss-mr-btm-1">
+        <p>Email<span class="color-red">*</span></p>
+        <input class="txt-input" type="email" id="email" name="email" autocomplete="on" required placeholder="name@domain.com" formControlName="email" />
+      </div>
+      <br />
+      <div class="form-control ss-mr-btm-1">
+        <p>Date of Survey<span class="color-red">*</span></p>
 
+        <input class="txt-input" type="date" id="date" placeholder="Enter today's date" formControlName="dateOfSurvey" />
+      </div>
+
+      <br />
+      <div class="form-control fx-col-center">
+        <label
+          >What do you like the most about the campus
+          <small>(Check all that apply)</small>
+        </label>
+        <br />
+        <div class="margin-lr-auto display-flex-col">
+          <label><input type="checkbox" (change)="onCheckboxChange($event)" name="likeuni" value="students" />students<br /></label>
+          <label><input type="checkbox" (change)="onCheckboxChange($event)" name="likeuni" value="location" />location<br /></label>
+          <label><input type="checkbox" (change)="onCheckboxChange($event)" name="likeuni" value="campus" />campus<br /></label>
+          <label><input type="checkbox" (change)="onCheckboxChange($event)" name="likeuni" value="atmosphere" />atmosphere<br /></label>
+          <label><input type="checkbox" (change)="onCheckboxChange($event)" name="likeuni" value="dormrooms" />dorm rooms<br /></label>
+          <label><input type="checkbox" (change)="onCheckboxChange($event)" name="likeuni" value="sports" />sports<br /></label>
+        </div>
+      </div>
+      <br />
+      <div class="form-control fx-col-center">
+        <label> What made you interested in this university? </label>
+
+        <br />
+        <div class="margin-lr-auto display-flex-col">
+          <label><input type="radio" formControlName="interests" name="interests" value="friends" /> friends<br /></label>
+          <label><input type="radio" formControlName="interests" name="interests" value="television" /> television<br /></label>
+          <label><input type="radio" formControlName="interests" name="interests" value="internet" /> internet<br /></label>
+          <label><input type="radio" formControlName="interests" name="interests" value="other" /> other<br /></label>
+        </div>
+      </div>
+      <br />
+      <div class="form-control fx-col-center">
+        <p>
+          How likely would you recommend GMU to your friend?
+          <span class="color-red">*</span>
+        </p>
+        <div class="margin-lr-auto width-100 display-flex-col">
+          <select class="txt-input rec-options" formControlName="rating" name="recommend" id="recommend">
+            <option value="very likely">Very Likely</option>
+            <option value="likely">Likely</option>
+            <option value="unlikely">Unlikely</option>
+          </select>
+        </div>
+      </div>
+      <br />
+
+      <div class="form-control">
+        <p>Rafel(Enter comma separated values)</p>
+        <input type="text" formControlName="values" class="txt-input" id="userinput" placeholder="Enter 10 values" />
+      </div>
+      <br />
+      <div class="form-control fx-col-center">
+        <label for="comment"> Additional Comments </label>
+        <br />
+        <textarea name="comment" formControlName="comments" id="comment" rows="6" cols="50" placeholder="Enter your comment here"> </textarea>
+      </div>
+      <br />
+      <div class="width-100 btn-wrapper">
+        <button type="submit" value="submit" class="btn-submit">SUBMIT</button>
+        <button type="reset" class="btn-cancel" (click)="router.navigate(['/'])">CANCEL</button>
+      </div>
+    </form>
+  </div>
 </div>

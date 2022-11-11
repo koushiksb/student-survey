@@ -8,9 +8,8 @@ describe('SurveyformComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SurveyformComponent ]
-    })
-    .compileComponents();
+      declarations: [SurveyformComponent]
+    }).compileComponents();
 
     fixture = TestBed.createComponent(SurveyformComponent);
     component = fixture.componentInstance;
