@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormArray, FormBuilder, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ApiService } from 'src/app/services/survey-api/api.service';
 
 @Component({
   selector: 'app-surveyform',
@@ -24,7 +25,10 @@ export class SurveyformComponent implements OnInit {
     comments: ''
   });
   checkArray: FormArray = this.surveyForm.get('likes') as FormArray;
-  constructor(private formBuilder: FormBuilder, public router: Router) {}
+  constructor(
+    private formBuilder: FormBuilder, 
+    public router: Router,
+    private api: ApiService) {}
 
   ngOnInit(): void {}
 
@@ -44,6 +48,10 @@ export class SurveyformComponent implements OnInit {
   }
 
   onSubmit() {
+    this.api.saveUserSurvey(this.surveyForm.value).subscribe(()=>{
+      console.log("saved successfully")
+      this.router.navigate(['/'])
+    })
     console.log(this.surveyForm.value);
   }
 }

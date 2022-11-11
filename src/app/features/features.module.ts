@@ -10,9 +10,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { HttpClientModule } from '@angular/common/http';
+import { SurveyarchievesComponent } from './survey/surveyarchieves/surveyarchieves.component';
 
 @NgModule({
-  declarations: [SurveyComponent, SurveyformComponent],
+  declarations: [SurveyComponent, SurveyformComponent, SurveyarchievesComponent],
   imports: [
     CommonModule,
     FeaturesRoutingModule,

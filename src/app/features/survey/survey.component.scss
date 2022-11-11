@@ -1,48 +1,54 @@
-.ss-landing-heading-wrapper {
+.ss-landing-page-wrapper{
+  padding: 4rem;
+}
+
+.ss-page-heading-wrapper{
   height: 20%;
   width: 100%;
 }
 
-.ss-landing-heading {
-  width: 60%;
-}
-
-.ss-text-color-green {
+.ss-page-heading{
+  font-size: 48px;
   color: #006633;
 }
 
-.ss-data-wrapper {
-  height: 80%;
-  width: 100%;
+.ss-body-wrapper{
+   height: 80%;
+   width: 100%;
 }
 
-.ss-data-card {
-  height: 90%;
-  width: 90%;
+.ss-card {
+  height: 30%;
+  width: 50%;
   background: #fff;
   border-radius: 2px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.ss-card-header {
-  height: 10%;
-  width: 100%;
+.ss-survey-form:link, .ss-survey-form:visited {
+  background-color: #006633;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.ss-btn-wrapper {
-  margin-right: 0.5rem;
+.ss-survey-form:hover, .ss-survey-form:active {
+  background-color: #014f28;
 }
 
-table {
-  width: 100%;
+.ss-survey-archieves:link, .ss-survey-archieves:visited {
+  background-color: #FFCC33;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.table-wrapper {
-  width: 100%;
-  height: 90%;
-  overflow-y: auto;
+.ss-survey-archieves:hover, .ss-survey-archieves:active {
+  background-color: #fcc51e;
 }
 
-.ss-data-table-height {
-  height: 100%;
-}
+

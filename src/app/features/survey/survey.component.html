@@ -1,93 +1,22 @@
-<div fxLayout="column" class="ss-width-100vw ss-height-100vh">
-  <div fxLayout="row" fxLayoutAlign="center center" class="ss-landing-heading-wrapper">
-    <div fxLayout="row" fxLayoutAlign="center center" class="ss-landing-heading ss-text-color-green">
-      <h1>Welcome to Student Surveys</h1>
-    </div>
-  </div>
-  <div class="ss-data-wrapper" fxLayout="row" fxLayoutAlign="center start">
-    <div fxLayout="column" class="ss-data-card">
-      <div fxLayout="row" class="ss-card-header">
-        <div fxLayout="column" fxLayoutAlign="center center" class="ss-margin-left-auto ss-btn-wrapper">
-          <button mat-raised-button color="primary" (click)="router.navigate(['/surveyfrom'])">Start Survey</button>
-        </div>
+<div fxLayout="column" fxLayoutAlign="center center" class="ss-width-100vw ss-height-100vh">
+  <div fxLayout="column" class="ss-landing-page-wrapper ss-width-100 ss-height-100">
+    <div fxLayout="row" fxLayoutAlign="center center" class="ss-page-heading-wrapper">
+      <div>
+        <h1 class="ss-page-heading">Welcome to Student Surveys</h1>
       </div>
-      <div class="table-wrapper" fxLayout="column">
-        <table mat-table [dataSource]="dataSource" class="ss-data-table-height">
-          <ng-container matColumnDef="position">
-            <th mat-header-cell *matHeaderCellDef>No.</th>
-            <td mat-cell *matCellDef="let element">{{ element.position }}</td>
-          </ng-container>
-
-          <ng-container matColumnDef="User Name">
-            <th mat-header-cell *matHeaderCellDef>User Name</th>
-            <td mat-cell *matCellDef="let element">{{ element.userName }}</td>
-          </ng-container>
-
-          <ng-container matColumnDef="Address">
-            <th mat-header-cell *matHeaderCellDef>Address</th>
-            <td mat-cell *matCellDef="let element">{{ element.address }}</td>
-          </ng-container>
-
-          <ng-container matColumnDef="City">
-            <th mat-header-cell *matHeaderCellDef>City</th>
-            <td mat-cell *matCellDef="let element">{{ element.city }}</td>
-          </ng-container>
-
-          <ng-container matColumnDef="State">
-            <th mat-header-cell *matHeaderCellDef>State</th>
-            <td mat-cell *matCellDef="let element">{{ element.state }}</td>
-          </ng-container>
-
-          <ng-container matColumnDef="Zip">
-            <th mat-header-cell *matHeaderCellDef>Zip</th>
-            <td mat-cell *matCellDef="let element">{{ element.zip }}</td>
-          </ng-container>
-
-          <ng-container matColumnDef="Phone">
-            <th mat-header-cell *matHeaderCellDef>Phone</th>
-            <td mat-cell *matCellDef="let element">{{ element.phone }}</td>
-          </ng-container>
-
-          <ng-container matColumnDef="E-mail">
-            <th mat-header-cell *matHeaderCellDef>E-mail</th>
-            <td mat-cell *matCellDef="let element">{{ element.email }}</td>
-          </ng-container>
-
-          <ng-container matColumnDef="Likes">
-            <th mat-header-cell *matHeaderCellDef>Likes</th>
-            <td mat-cell *matCellDef="let element">{{ element.likes }}</td>
-          </ng-container>
-
-          <ng-container matColumnDef="Interests">
-            <th mat-header-cell *matHeaderCellDef>Interests</th>
-            <td mat-cell *matCellDef="let element">{{ element.interests }}</td>
-          </ng-container>
-
-          <ng-container matColumnDef="Date of Survey">
-            <th mat-header-cell *matHeaderCellDef>Date of Survey</th>
-            <td mat-cell *matCellDef="let element">{{ element.dateOfSurvey }}</td>
-          </ng-container>
-
-          <ng-container matColumnDef="Ratings">
-            <th mat-header-cell *matHeaderCellDef>Ratings</th>
-            <td mat-cell *matCellDef="let element">{{ element.rating }}</td>
-          </ng-container>
-
-          <ng-container matColumnDef="Values">
-            <th mat-header-cell *matHeaderCellDef>Values</th>
-            <td mat-cell *matCellDef="let element">{{ element.values }}</td>
-          </ng-container>
-
-          <ng-container matColumnDef="Comments">
-            <th mat-header-cell *matHeaderCellDef>Comments</th>
-            <td mat-cell *matCellDef="let element">{{ element.comments }}</td>
-          </ng-container>
-
-          <tr mat-header-row *matHeaderRowDef="surveyColumns"></tr>
-          <tr mat-row *matRowDef="let row; columns: surveyColumns"></tr>
-        </table>
-
-        <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aria-label="Select page of periodic elements"> </mat-paginator>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center start" class="ss-body-wrapper">
+      <div fxLayout="row" fxLayoutAlign="center center" class="ss-card">
+        <div fxLayout="column" fxFlex="50" class="ss-height-100" fxLayoutAlign="center center">
+          <a class="ss-width-100 ss-height-100 ss-survey-form" fxLayoutAlign="center center" href="/surveyform">
+            Fill Survey Form
+          </a>
+        </div>
+        <div fxLayout="column" fxFlex="50"  class="ss-height-100"  fxLayoutAlign="center center">
+          <a class="ss-width-100 ss-height-100 ss-survey-archieves" fxLayoutAlign="center center" href="/surveyarchieves">
+            Survey Archieves
+          </a>
+        </div>
       </div>
     </div>
   </div>

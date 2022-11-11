@@ -9,4 +9,7 @@ export class ApiService {
   getSurveyData() {
     return this.http.get<any>('http://localhost:3000/surveyData');
   }
+  saveUserSurvey(data:any) {
+    return this.http.post<any>('http://localhost:3000/userSurvey',{data:data});
+  }
 }
