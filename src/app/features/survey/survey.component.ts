@@ -2,13 +2,13 @@ import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table';
-
+import { ApiService } from 'src/app/services/survey-api/api.service';
 @Component({
   selector: 'app-survey',
   templateUrl: './survey.component.html',
   styleUrls: ['./survey.component.scss']
 })
-export class SurveyComponent implements AfterViewInit {
+export class SurveyComponent implements OnInit {
   surveyData: surveyDataElement[] = [
     {position: 1, userName: 'Hydrogen', city: 'Fairfax', state: 'VA',address:'lol', zip: '22030', phone: '5712016812', email: 'ksurabha@gmu.edu', dateOfSurvey: '10-03-2022', likes: 'friends', interests: 'television', rating: 'likely', values: '1,2,3,4,5,6,7,8,9,10', comments:'aesrdthnsbavcshdhbsv'},
     {position: 2, userName: 'Hydrogen', city: 'Fairfax', state: 'VA',address:'lol', zip: '22030', phone: '5712016812', email: 'ksurabha@gmu.edu', dateOfSurvey: '10-03-2022', likes: 'friends', interests: 'television', rating: 'likely', values: '1,2,3,4,5,6,7,8,9,10', comments:'aesrdthnsbavcshdhbsv'},
@@ -32,16 +32,28 @@ export class SurveyComponent implements AfterViewInit {
     {position: 20, userName: 'Hydrogen', city: 'Fairfax', state: 'VA',address:'lol', zip: '22030', phone: '5712016812', email: 'ksurabha@gmu.edu', dateOfSurvey: '10-03-2022', likes: 'friends', interests: 'television', rating: 'likely', values: '1,2,3,4,5,6,7,8,9,10', comments:'aesrdthnsbavcshdhbsv'},
   
   ]
+  emptysurveyData: surveyDataElement[] = []
   surveyColumns: string[] = ['position', 'User Name', 'Address', 'City', 'State', 'Zip', 'Phone', 'E-mail', 'Likes', 'Interests', 'Date of Survey', 'Ratings', 'Values', 'Comments'];
-  dataSource = new MatTableDataSource<surveyDataElement>(this.surveyData);
+  dataSource: MatTableDataSource<surveyDataElement> = new MatTableDataSource<surveyDataElement>(this.emptysurveyData);
 
   @ViewChild(MatPaginator)
   paginator!: MatPaginator;
   
-  constructor(public router: Router) { }
+  constructor(
+    public router: Router,
+    private api: ApiService
+    ) { }
+
+  ngOnInit(){
+    // this.api.getSurveyData().subscribe(async data => {
+    //   console.log("API Called")
+    // })
+    this.dataSource = new MatTableDataSource<surveyDataElement>(this.surveyData);
+  }  
   
   ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
+    if (this.dataSource)
+      this.dataSource.paginator = this.paginator;
   }
 
 }
