@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  angular-service:
+    container_name: student-survey-frontend
+    build: .
+    ports:
+      - '80:80'
