@@ -14,7 +14,7 @@ export class SurveyarchievesComponent implements OnInit {
 
   surveyData: surveyDataElement[] = [
     {
-      position: 1,
+      id: 1,
       userName: 'Hydrogen',
       city: 'Fairfax',
       state: 'VA',
@@ -30,7 +30,7 @@ export class SurveyarchievesComponent implements OnInit {
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
-      position: 2,
+      id: 2,
       userName: 'Hydrogen',
       city: 'Fairfax',
       state: 'VA',
@@ -46,7 +46,7 @@ export class SurveyarchievesComponent implements OnInit {
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
-      position: 3,
+      id: 3,
       userName: 'Hydrogen',
       city: 'Fairfax',
       state: 'VA',
@@ -62,7 +62,7 @@ export class SurveyarchievesComponent implements OnInit {
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
-      position: 4,
+      id: 4,
       userName: 'Hydrogen',
       city: 'Fairfax',
       state: 'VA',
@@ -78,7 +78,7 @@ export class SurveyarchievesComponent implements OnInit {
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
-      position: 5,
+      id: 5,
       userName: 'Hydrogen',
       city: 'Fairfax',
       state: 'VA',
@@ -94,7 +94,7 @@ export class SurveyarchievesComponent implements OnInit {
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
-      position: 6,
+      id: 6,
       userName: 'Hydrogen',
       city: 'Fairfax',
       state: 'VA',
@@ -110,7 +110,7 @@ export class SurveyarchievesComponent implements OnInit {
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
-      position: 7,
+      id: 7,
       userName: 'Hydrogen',
       city: 'Fairfax',
       state: 'VA',
@@ -126,7 +126,7 @@ export class SurveyarchievesComponent implements OnInit {
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
-      position: 8,
+      id: 8,
       userName: 'Hydrogen',
       city: 'Fairfax',
       state: 'VA',
@@ -142,7 +142,7 @@ export class SurveyarchievesComponent implements OnInit {
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
-      position: 9,
+      id: 9,
       userName: 'Hydrogen',
       city: 'Fairfax',
       state: 'VA',
@@ -158,7 +158,7 @@ export class SurveyarchievesComponent implements OnInit {
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
-      position: 10,
+      id: 10,
       userName: 'Hydrogen',
       city: 'Fairfax',
       state: 'VA',
@@ -174,7 +174,7 @@ export class SurveyarchievesComponent implements OnInit {
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
-      position: 11,
+      id: 11,
       userName: 'Hydrogen',
       city: 'Fairfax',
       state: 'VA',
@@ -190,7 +190,7 @@ export class SurveyarchievesComponent implements OnInit {
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
-      position: 12,
+      id: 12,
       userName: 'Hydrogen',
       city: 'Fairfax',
       state: 'VA',
@@ -206,7 +206,7 @@ export class SurveyarchievesComponent implements OnInit {
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
-      position: 13,
+      id: 13,
       userName: 'Hydrogen',
       city: 'Fairfax',
       state: 'VA',
@@ -222,7 +222,7 @@ export class SurveyarchievesComponent implements OnInit {
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
-      position: 14,
+      id: 14,
       userName: 'Hydrogen',
       city: 'Fairfax',
       state: 'VA',
@@ -238,7 +238,7 @@ export class SurveyarchievesComponent implements OnInit {
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
-      position: 15,
+      id: 15,
       userName: 'Hydrogen',
       city: 'Fairfax',
       state: 'VA',
@@ -254,7 +254,7 @@ export class SurveyarchievesComponent implements OnInit {
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
-      position: 16,
+      id: 16,
       userName: 'Hydrogen',
       city: 'Fairfax',
       state: 'VA',
@@ -270,7 +270,7 @@ export class SurveyarchievesComponent implements OnInit {
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
-      position: 17,
+      id: 17,
       userName: 'Hydrogen',
       city: 'Fairfax',
       state: 'VA',
@@ -286,7 +286,7 @@ export class SurveyarchievesComponent implements OnInit {
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
-      position: 18,
+      id: 18,
       userName: 'Hydrogen',
       city: 'Fairfax',
       state: 'VA',
@@ -302,7 +302,7 @@ export class SurveyarchievesComponent implements OnInit {
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
-      position: 19,
+      id: 19,
       userName: 'Hydrogen',
       city: 'Fairfax',
       state: 'VA',
@@ -318,7 +318,7 @@ export class SurveyarchievesComponent implements OnInit {
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
-      position: 20,
+      id: 20,
       userName: 'Hydrogen',
       city: 'Fairfax',
       state: 'VA',
@@ -336,7 +336,7 @@ export class SurveyarchievesComponent implements OnInit {
   ];
   emptysurveyData: surveyDataElement[] = [];
   surveyColumns: string[] = [
-    'position',
+    'id',
     'User Name',
     'Address',
     'City',
@@ -371,7 +371,7 @@ export class SurveyarchievesComponent implements OnInit {
 }
 
 export interface surveyDataElement {
-  position: number;
+  id: number;
   userName: string;
   address: string;
   city: string;
