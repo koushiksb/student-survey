@@ -360,6 +360,9 @@ export class SurveyarchievesComponent implements OnInit {
 
   ngOnInit(): void {
     this.dataSource = new MatTableDataSource<surveyDataElement>(this.surveyData);
+    this.api.getSurveyData().subscribe((data:any)=>{
+      console.log(data)
+    })
   }
   
   ngAfterViewInit() {
