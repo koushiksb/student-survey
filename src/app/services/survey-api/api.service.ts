@@ -7,9 +7,9 @@ export class ApiService {
   constructor(private http: HttpClient) {}
 
   getSurveyData() {
-    return this.http.get<any>('http://localhost:9090/surveyData');
+    return this.http.get<any>('http://localhost:9090/surveyForms');
   }
   saveUserSurvey(data:any) {
-    return this.http.post<any>('http://localhost:3000/userSurvey',{data:data});
+    return this.http.post<any>('http://localhost:9090/surveyForms',{data:data});
   }
 }
