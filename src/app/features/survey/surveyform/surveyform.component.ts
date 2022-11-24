@@ -21,7 +21,7 @@ export class SurveyformComponent implements OnInit {
     likes: this.formBuilder.array([]),
     interests: '',
     rating: '',
-    values: '',
+    willRecommend: '',
     comments: ''
   });
   checkArray: FormArray = this.surveyForm.get('likes') as FormArray;
@@ -48,10 +48,20 @@ export class SurveyformComponent implements OnInit {
   }
 
   onSubmit() {
-    this.api.saveUserSurvey(this.surveyForm.value).subscribe(()=>{
-      console.log("saved successfully")
+    var payLoad:any = {};
+    Object.keys(this.surveyForm.controls).forEach(key => {
+      if(this.surveyForm != null){
+        if(key == "likes"){
+          payLoad[key] = JSON.stringify(this.surveyForm.get(key)?.value)
+        }else{
+          payLoad[key] = this.surveyForm.get(key)?.value
+        }
+      }
+    });
+    console.log("payLoad: ", payLoad) 
+    this.api.saveUserSurvey(payLoad).subscribe(()=>{
+      console.log("saved successfully: ")
       this.router.navigate(['/'])
     })
-    console.log(this.surveyForm.value);
   }
 }

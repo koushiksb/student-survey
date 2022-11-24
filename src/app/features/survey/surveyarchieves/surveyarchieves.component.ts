@@ -26,7 +26,7 @@ export class SurveyarchievesComponent implements OnInit {
       likes: 'friends',
       interests: 'television',
       rating: 'likely',
-      values: '1,2,3,4,5,6,7,8,9,10',
+      willRecommend: '1,2,3,4,5,6,7,8,9,10',
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
@@ -42,7 +42,7 @@ export class SurveyarchievesComponent implements OnInit {
       likes: 'friends',
       interests: 'television',
       rating: 'likely',
-      values: '1,2,3,4,5,6,7,8,9,10',
+      willRecommend: '1,2,3,4,5,6,7,8,9,10',
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
@@ -58,7 +58,7 @@ export class SurveyarchievesComponent implements OnInit {
       likes: 'friends',
       interests: 'television',
       rating: 'likely',
-      values: '1,2,3,4,5,6,7,8,9,10',
+      willRecommend: '1,2,3,4,5,6,7,8,9,10',
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
@@ -74,7 +74,7 @@ export class SurveyarchievesComponent implements OnInit {
       likes: 'friends',
       interests: 'television',
       rating: 'likely',
-      values: '1,2,3,4,5,6,7,8,9,10',
+      willRecommend: '1,2,3,4,5,6,7,8,9,10',
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
@@ -90,7 +90,7 @@ export class SurveyarchievesComponent implements OnInit {
       likes: 'friends',
       interests: 'television',
       rating: 'likely',
-      values: '1,2,3,4,5,6,7,8,9,10',
+      willRecommend: '1,2,3,4,5,6,7,8,9,10',
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
@@ -106,7 +106,7 @@ export class SurveyarchievesComponent implements OnInit {
       likes: 'friends',
       interests: 'television',
       rating: 'likely',
-      values: '1,2,3,4,5,6,7,8,9,10',
+      willRecommend: '1,2,3,4,5,6,7,8,9,10',
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
@@ -122,7 +122,7 @@ export class SurveyarchievesComponent implements OnInit {
       likes: 'friends',
       interests: 'television',
       rating: 'likely',
-      values: '1,2,3,4,5,6,7,8,9,10',
+      willRecommend: '1,2,3,4,5,6,7,8,9,10',
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
@@ -138,7 +138,7 @@ export class SurveyarchievesComponent implements OnInit {
       likes: 'friends',
       interests: 'television',
       rating: 'likely',
-      values: '1,2,3,4,5,6,7,8,9,10',
+      willRecommend: '1,2,3,4,5,6,7,8,9,10',
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
@@ -154,7 +154,7 @@ export class SurveyarchievesComponent implements OnInit {
       likes: 'friends',
       interests: 'television',
       rating: 'likely',
-      values: '1,2,3,4,5,6,7,8,9,10',
+      willRecommend: '1,2,3,4,5,6,7,8,9,10',
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
@@ -170,7 +170,7 @@ export class SurveyarchievesComponent implements OnInit {
       likes: 'friends',
       interests: 'television',
       rating: 'likely',
-      values: '1,2,3,4,5,6,7,8,9,10',
+      willRecommend: '1,2,3,4,5,6,7,8,9,10',
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
@@ -186,7 +186,7 @@ export class SurveyarchievesComponent implements OnInit {
       likes: 'friends',
       interests: 'television',
       rating: 'likely',
-      values: '1,2,3,4,5,6,7,8,9,10',
+      willRecommend: '1,2,3,4,5,6,7,8,9,10',
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
@@ -202,7 +202,7 @@ export class SurveyarchievesComponent implements OnInit {
       likes: 'friends',
       interests: 'television',
       rating: 'likely',
-      values: '1,2,3,4,5,6,7,8,9,10',
+      willRecommend: '1,2,3,4,5,6,7,8,9,10',
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
@@ -218,7 +218,7 @@ export class SurveyarchievesComponent implements OnInit {
       likes: 'friends',
       interests: 'television',
       rating: 'likely',
-      values: '1,2,3,4,5,6,7,8,9,10',
+      willRecommend: '1,2,3,4,5,6,7,8,9,10',
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
@@ -234,7 +234,7 @@ export class SurveyarchievesComponent implements OnInit {
       likes: 'friends',
       interests: 'television',
       rating: 'likely',
-      values: '1,2,3,4,5,6,7,8,9,10',
+      willRecommend: '1,2,3,4,5,6,7,8,9,10',
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
@@ -250,7 +250,7 @@ export class SurveyarchievesComponent implements OnInit {
       likes: 'friends',
       interests: 'television',
       rating: 'likely',
-      values: '1,2,3,4,5,6,7,8,9,10',
+      willRecommend: '1,2,3,4,5,6,7,8,9,10',
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
@@ -266,7 +266,7 @@ export class SurveyarchievesComponent implements OnInit {
       likes: 'friends',
       interests: 'television',
       rating: 'likely',
-      values: '1,2,3,4,5,6,7,8,9,10',
+      willRecommend: '1,2,3,4,5,6,7,8,9,10',
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
@@ -282,7 +282,7 @@ export class SurveyarchievesComponent implements OnInit {
       likes: 'friends',
       interests: 'television',
       rating: 'likely',
-      values: '1,2,3,4,5,6,7,8,9,10',
+      willRecommend: '1,2,3,4,5,6,7,8,9,10',
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
@@ -298,7 +298,7 @@ export class SurveyarchievesComponent implements OnInit {
       likes: 'friends',
       interests: 'television',
       rating: 'likely',
-      values: '1,2,3,4,5,6,7,8,9,10',
+      willRecommend: '1,2,3,4,5,6,7,8,9,10',
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
@@ -314,7 +314,7 @@ export class SurveyarchievesComponent implements OnInit {
       likes: 'friends',
       interests: 'television',
       rating: 'likely',
-      values: '1,2,3,4,5,6,7,8,9,10',
+      willRecommend: '1,2,3,4,5,6,7,8,9,10',
       comments: 'aesrdthnsbavcshdhbsv'
     },
     {
@@ -330,13 +330,13 @@ export class SurveyarchievesComponent implements OnInit {
       likes: 'friends',
       interests: 'television',
       rating: 'likely',
-      values: '1,2,3,4,5,6,7,8,9,10',
+      willRecommend: '1,2,3,4,5,6,7,8,9,10',
       comments: 'aesrdthnsbavcshdhbsv'
     }
   ];
   emptysurveyData: surveyDataElement[] = [];
   surveyColumns: string[] = [
-    'Id',
+    'reportId',
     'User Name',
     'Address',
     'City',
@@ -348,7 +348,7 @@ export class SurveyarchievesComponent implements OnInit {
     'Interests',
     'Date of Survey',
     'Ratings',
-    'Values',
+    'Will Recommend',
     'Comments'
   ];
   dataSource: MatTableDataSource<surveyDataElement> = new MatTableDataSource<surveyDataElement>(this.emptysurveyData);
@@ -362,6 +362,7 @@ export class SurveyarchievesComponent implements OnInit {
     this.dataSource = new MatTableDataSource<surveyDataElement>(this.surveyData);
     this.api.getSurveyData().subscribe((data:any)=>{
       console.log(data)
+      this.dataSource = new MatTableDataSource<surveyDataElement>(data);
     })
   }
   
@@ -383,6 +384,6 @@ export interface surveyDataElement {
   likes: string;
   interests: string;
   rating: string;
-  values: string;
+  willRecommend: string;
   comments: string;
 }
