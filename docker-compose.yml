@@ -3,6 +3,19 @@ services:
   angular-service:
     container_name: student-survey-frontend
     build: .
+    networks:
+      - backend
     ports:
       - '4200:80'
-      - '3000:3000'
+     
+  backend-service:
+    container_name: student-survey-backend
+    build: ./backend/surveyform/
+    networks:
+      - backend
+    ports:
+      - '9090:9090'
+
+networks:
+  backend:
+    driver: bridge
