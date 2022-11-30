@@ -15,7 +15,7 @@ import com.swe645.surveyform.entity.StudentSurvey;
 import com.swe645.surveyform.service.SurveyFormService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RequestMapping("/surveyForms")
 public class SurveyFormController {
 	
